@@ -58,7 +58,7 @@ def build():
 
     if args.linux:
         print('\nCompiling ' + args.version + ' Linux')
-        subprocess.check_call(['bin/gbuild', '--allow-sudo', '-j', args.jobs, '-m', args.memory, '--commit', 'groestlcoin='+args.commit, '--url', 'groestlcoin='+args.url, '../groestlcoin/contrib/gitian-descriptors/gitian-linux.yml'])
+        subprocess.check_call(['bin/gbuild', '-j', args.jobs, '-m', args.memory, '--commit', 'groestlcoin='+args.commit, '--url', 'groestlcoin='+args.url, '../groestlcoin/contrib/gitian-descriptors/gitian-linux.yml'])
         subprocess.check_call(['bin/gsign', '-p', args.sign_prog, '--signer', args.signer, '--release', args.version+'-linux', '--destination', '../gitian.sigs/', '../groestlcoin/contrib/gitian-descriptors/gitian-linux.yml'])
         subprocess.check_call('mv build/out/groestlcoin-*.tar.gz build/out/src/groestlcoin-*.tar.gz ../groestlcoin-binaries/'+args.version, shell=True)
 
