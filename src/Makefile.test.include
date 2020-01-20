@@ -42,7 +42,6 @@ JSON_TEST_FILES = \
   test/data/key_io_valid.json \
   test/data/key_io_invalid.json \
   test/data/script_tests.json \
-  test/data/sighash.json \
   test/data/tx_invalid.json \
   test/data/tx_valid.json
 
@@ -134,6 +133,7 @@ BITCOIN_TESTS =\
   test/script_standard_tests.cpp \
   test/scriptnum_tests.cpp \
   test/serialize_tests.cpp \
+  test/sighash_tests.cpp \
   test/sigopcount_tests.cpp \
   test/skiplist_tests.cpp \
   test/streams_tests.cpp \
