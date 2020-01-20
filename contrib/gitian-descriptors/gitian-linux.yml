@@ -1,5 +1,5 @@
 ---
-name: "groestlcoin-core-linux-2.19"
+name: "groestlcoin-linux-2.19.99"
 enable_cache: true
 distro: "ubuntu"
 suites:
@@ -33,7 +33,7 @@ packages:
 - "ca-certificates"
 - "python3"
 remotes:
-- "url": "https://github.com/groestlcoin/groestlcoin.git"
+- "url": "https://github.com/mmitech/groestlcoin.git"
   "dir": "groestlcoin"
 files: []
 script: |

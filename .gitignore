@@ -140,3 +140,4 @@ db5/
 osx_volname
 dist/
 *.background.tiff
+.vs/*
